@@ -1,0 +1,179 @@
+**************** primary cmoparison ***************
+vae10...
+model: vae10c
+data: continuous
+load model ./models/vae10.pkl
+run valid
+num_test: 36
+
+steps 99
+Accept: 0.666666666667
+Log-prob: 510.46897783
+Final Log-prob: 510.46897783
+AIS forward Eval time: 199.191575050354 seconds
+
+model: vae10c
+data: continuous
+load model ./models/vae10.pkl
+run test
+num_test: 36
+
+steps 99
+Accept: 0.633680555556
+Log-prob: 493.64521855
+Final Log-prob: 493.64521855
+AIS forward Eval time: 227.6339499950409 seconds
+
+gan10...
+model: gan10c
+data: continuous
+load model ./models/gan10.pkl
+run valid
+num_test: 36
+
+steps 99
+Accept: 0.744791666667
+Log-prob: 208.759017405
+Final Log-prob: 208.759017405
+AIS forward Eval time: 137.53460788726807 seconds
+
+model: gan10c
+data: continuous
+load model ./models/gan10.pkl
+run test
+num_test: 36
+
+steps 99
+Accept: 0.760416666667
+Log-prob: 243.640872684
+Final Log-prob: 243.640872684
+AIS forward Eval time: 172.83515191078186 seconds
+
+vae50...
+model: vae50c
+data: continuous
+load model ./models/vae50.pkl
+run valid
+num_test: 36
+
+steps 99
+Accept: 0.505208333333
+Log-prob: 523.310143918
+Final Log-prob: 523.310143918
+AIS forward Eval time: 280.5417411327362 seconds
+
+model: vae50c
+data: continuous
+load model ./models/vae50.pkl
+run test
+num_test: 36
+
+steps 99
+Accept: 0.505208333333
+Log-prob: 526.465908472
+Final Log-prob: 526.465908472
+AIS forward Eval time: 268.1555540561676 seconds
+
+gan50...
+model: gan50c
+data: continuous
+load model ./models/gan50.pkl
+run valid
+num_test: 36
+
+steps 99
+Accept: 0.704861111111
+Log-prob: 318.678249598
+Final Log-prob: 318.678249598
+AIS forward Eval time: 246.79337763786316 seconds
+
+model: gan50c
+data: continuous
+load model ./models/gan50.pkl
+run test
+num_test: 36
+
+steps 99
+Accept: 0.694444444444
+Log-prob: 348.73435766
+Final Log-prob: 348.73435766
+AIS forward Eval time: 228.00799107551575 seconds
+
+**************** GAN varing obs var ***************
+gan10, sigma=0.001
+model: gan10c
+data: continuous
+load model ./models/gan10.pkl
+run test
+num_test: 36
+
+steps 99
+Accept: 0.411458333333
+Log-prob: -9894.82727253
+Final Log-prob: -9894.82727253
+AIS forward Eval time: 99.73660206794739 seconds
+
+gan10, sigma=0.005
+model: gan10c
+data: continuous
+load model ./models/gan10.pkl
+run test
+num_test: 36
+
+steps 99
+Accept: 0.668402777778
+Log-prob: -1014.48293469
+Final Log-prob: -1014.48293469
+AIS forward Eval time: 101.28282594680786 seconds
+
+gan10, sigma=0.01
+model: gan10c
+data: continuous
+load model ./models/gan10.pkl
+run test
+num_test: 36
+
+steps 99
+Accept: 0.736111111111
+Log-prob: -60.9799450488
+Final Log-prob: -60.9799450488
+AIS forward Eval time: 99.72641801834106 seconds
+
+gan10, sigma=0.05
+model: gan10c
+data: continuous
+load model ./models/gan10.pkl
+run test
+num_test: 36
+
+steps 99
+Accept: 0.717013888889
+Log-prob: 188.979763238
+Final Log-prob: 188.979763238
+AIS forward Eval time: 99.50631904602051 seconds
+
+gan10, sigma=0.1
+model: gan10c
+data: continuous
+load model ./models/gan10.pkl
+run test
+num_test: 36
+
+steps 99
+Accept: 0.692708333333
+Log-prob: 39.0610990616
+Final Log-prob: 39.0610990616
+AIS forward Eval time: 99.40200018882751 seconds
+
+gan10, sigma=0.5
+model: gan10c
+data: continuous
+load model ./models/gan10.pkl
+run test
+num_test: 36
+
+steps 99
+Accept: 0.722222222222
+Log-prob: -489.39707813
+Final Log-prob: -489.39707813
+AIS forward Eval time: 100.06762409210205 seconds
